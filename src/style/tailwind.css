@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.btn-red {
+  background-color: #e21c23;
+  border-color: #e21c23;
+  width: 140px;
+  height: 46px;
+  @apply text-white font-light text-base border  rounded-full;
+}
+
+.btn-red-login {
+  background-color: #e21c23;
+  border-color: #e21c23;
+  height: 46px;
+  @apply text-white w-full font-light text-base border  rounded-full;
+}
+
+.btn-red-gray {
+  background-color: #ffffff;
+  border-color: rgb(83, 83, 83);
+  width: 140px;
+  height: 46px;
+  @apply font-light text-base border  rounded-full;
+}
+
+.btn-red:hover {
+  background-color: #f95e60;
+  border-color: #f95e60;
+  transition: background-color 1.9s;
+  -webkit-transition: background-color 1.9s;
+  -moz-transition: background-color 1.9s;
+  -ms-transition: background-color 1.9s;
+  -o-transition: background-color 1.9s;
+}
+
+.btn-red-outlet {
+  background-color: white;
+  border-color: #e21c23;
+  color: #e21c23;
+  width: 140px;
+  height: 46px;
+  @apply font-light text-base border  rounded-full;
+}
+
+.banner {
+  color: #fff;
+  background: linear-gradient(180deg, #ff807c, #fd4b47);
+}
+
+.btn-banner {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 15px 0 0 15px;
+  background-color: #e21c23;
+  padding: 12px;
+  min-height: 60px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.box-header {
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 100%;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: top;
+  background-image: url("https://www.swensens1112.com/images/card-head.png");
+}
+
+.box-header-login {
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 480px;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: top;
+  background-image: url("https://www.swensens1112.com/images/card-head.png");
+}
+select,
+input,
+textarea {
+  @apply border  rounded-2xl w-full py-3 px-3 text-gray-900 leading-tight outline-none  border-gray-300 my-1;
+}
+
+input:read-only,
+textarea:read-only,
+select:read-only {
+  @apply border  rounded-2xl w-full py-3 px-3 text-gray-900 leading-tight outline-none  border-gray-300 my-1 bg-slate-200 cursor-default;
+}
+label {
+  @apply font-light text-gray-700;
+}
+
+.radio {
+  @apply rounded-full  p-1 xl:p-3 px-4 xl:px-8 border border-gray-300 text-red-600 font-light cursor-pointer;
+}
+
+.radio-active {
+  @apply rounded-full p-1 xl:p-3 px-4 xl:px-8 border border-gray-300 bg-red-600 text-white  font-light;
+}
+
+.tab-register-active {
+  @apply w-full py-3 px-4 flex cursor-pointer justify-center items-center gap-2 bg-red-600 text-sm font-medium text-center text-white rounded-lg;
+}
+
+.tab-register {
+  @apply w-full  py-3 px-4 inline-flex justify-center items-center gap-2 bg-transparent text-sm font-medium text-center text-gray-500 rounded-lg  cursor-default;
+}
+
+.w-480 {
+  width: 480px;
+}
+
+.input-invalid {
+  @apply leading-tight outline-none border-red-400 focus:border-red-400 focus:shadow-red-100;
+}
+
+.error-message {
+  @apply text-red-500 text-sm;
+}
